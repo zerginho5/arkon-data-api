@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6f05#ukb$3sia($#aw9rzxwc0q*--!)77$q1qcrs2xc47+ya&k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arkon-data-api-hyqab.ondigitalocean.app']
 
 
 # Application definition
