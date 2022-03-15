@@ -23,7 +23,7 @@ router = routers.DefaultRouter()
 router.register(r'tareas', views.TareaView, 'tarea')
 
 class TareaAdmin(admin.ModelAdmin):
-    list_display = ('descripcion', 'fechaFin', 'duracion', 'tiempoReg', 'estatus')
+    list_display = ('descripcion', 'fechaFin', 'duracion', 'tiempoReg', 'estatus', 'usuario')
     
 admin.site.register(Tarea, TareaAdmin)
 

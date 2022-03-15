@@ -8,6 +8,7 @@ class Tarea(models.Model):
     duracion = models.FloatField()
     tiempoReg = models.FloatField()
     estatus = models.CharField(max_length=1)
+    usuario = models.TextField(default="")
 
     def _str_(self):
         return self.descripcion

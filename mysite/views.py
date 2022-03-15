@@ -5,6 +5,14 @@ from .models import Tarea
 
 # Create your views here.
 
+
 class TareaView(viewsets.ModelViewSet):
     serializer_class = TareaSerializer
-    queryset = Tarea.objects.all()
+
+    def get_queryset(self):
+        if self.request.method == 'GET':
+            queryset = Tarea.objects.all()
+            usuario = self.request.GET.get('q', None)
+            if usuario is not None:
+                queryset = queryset.filter(usuario=usuario)
+            return queryset
