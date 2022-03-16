@@ -15,5 +15,4 @@ class TareaView(viewsets.ModelViewSet):
             usuario = self.request.GET.get('q', None)
             if usuario is not None:
                 queryset = queryset.filter(usuario=usuario)
-                queryset = queryset.filter(estatus!='E')
             return queryset
