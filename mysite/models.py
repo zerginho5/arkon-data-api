@@ -6,7 +6,7 @@ class Tarea(models.Model):
     descripcion = models.TextField()
     fechaFin = models.DateTimeField()
     duracion = models.FloatField()
-    tiempoReg = models.FloatField()
+    tiempoReg = models.DateTimeField()
     estatus = models.CharField(max_length=1)
     usuario = models.TextField(default="")
 
