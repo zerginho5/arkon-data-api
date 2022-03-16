@@ -16,3 +16,11 @@ class TareaView(viewsets.ModelViewSet):
             if usuario is not None:
                 queryset = queryset.filter(usuario=usuario)
             return queryset
+        if self.request.method == 'DELETE':
+            print("es delete")
+            queryset = Tarea.objects.all()
+            return queryset
+        if self.request.method == 'PUT':
+            print("es put!")
+            queryset = Tarea.objects.all()
+            return queryset
