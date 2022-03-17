@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -134,7 +135,4 @@ INSTALLED_APPS = [
     'mysite',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000', 
-     'https://arkon-data-firebase.web.app/'
-]
+CORS_ORIGIN_ALLOW_ALL=True
