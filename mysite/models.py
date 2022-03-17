@@ -1,4 +1,5 @@
 from django.db import models
+# El Modelo Tarea utiliza un campo nuevo, el de usuario, el cual almacena el correo del usuario que es el propietario de la tarea. 
 
 # Create your models here.
 
